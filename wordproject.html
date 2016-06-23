@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Phrase-o-matic</title>
+  <script>
+    function makePhrases() {
+      var words1 = ["24/7 " , "multi-tier " , "30,000 foot " , "B-to-B" , "win-win" ,"eloquent scm is a concept that require full attention" ,"knowledge in data science will help build complete analysis"];
+      var words2 = ["empowered ", "value-added", "oriented", "focused", "aligned","Supply chain is a well defind concept","best planners come to life in chellenging situation"];
+      var words3 = ["process ", "solution ", "tipping-point ", "strategy", "vision","if you work work hard you will acheive desired results","the main idea is centered on cost reduction"];
+      var words4 = ["well defined ", "regardless", "magnificent", "should not negelect", "fantastic","absolutely outstanding","you dont know jack"];
+      var words5 = ["well defined", "regardless", "magnificent", "should not negelect ", "fantastic","absolutely outstanding","you dont know jack"];
+
+      var rand1 = Math.floor(Math.random() * words1.length);
+      var rand2 = Math.floor(Math.random() * words2.length);
+      var rand3 = Math.floor(Math.random() * words3.length);
+      var rand4 = Math.floor(Math.random() * words4.length);
+      var rand5 = Math.floor(Math.random() * words5.length);
+
+      var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3]+ " " + words4[rand4]+ " " + words5[rand5];
+        //for (i=0,i<phrase;i++)
+        document.write (phrase +"<br>");
+      
+      
+      
+      window.onload=function(){
+        setInterval(makePhrases,10000);
+      }
+     
+      
+    }
+     
+    makePhrases();
+          
+    </script>
+</head>
+<body></body>
+</html>
